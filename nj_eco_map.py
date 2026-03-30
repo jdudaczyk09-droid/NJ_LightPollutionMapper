@@ -28,7 +28,7 @@ from folium import plugins
 #  CONFIG  — edit these
 # ─────────────────────────────────────────────────────────────────────────────
 
-EBIRD_API_KEY  = "7efudt9leb19"         # https://ebird.org/api/keygen
+EBIRD_API_KEY = os.environ.get("EBIRD_API_KEY", "")
 NJ_REGION_CODE = "US-NJ"
 DAYS_BACK      = 14                     # how many days of eBird obs to pull
 OUTPUT_FILE    = "nj_eco_map.html"
