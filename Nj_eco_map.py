@@ -34,7 +34,7 @@ from folium import plugins
 EBIRD_API_KEY  = os.environ.get("EBIRD_API_KEY", "")
 NJ_REGION_CODE = "US-NJ"
 DAYS_BACK      = 14                     # how many days of eBird obs to pull
-OUTPUT_FILE    = "nj_eco_map.html"
+OUTPUT_FILE    = "index.html"
 SERVE_PORT     = 8765                   # local server port for the rendered map
 
 # Fallback LP value (mcd/m²) used when a county isn't in NJ_LP_DATA.
